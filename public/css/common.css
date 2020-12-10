@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+/**
+ * 共通スタイル
+ * @version 2.0 - 11:25 2011/01/21
+ */
+
+/* reset */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, dialog, figcaption, figure, footer, header,
+hgroup, menu, nav, section,
+time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; font-style: normal; vertical-align: baseline; background: transparent;}
+
+article, aside, details, dialog,
+figcaption, figure, footer, header, hgroup, nav, section { display: block;}
+
+ol { list-style: decimal; padding-left: 33px;}
+ul { list-style: none;}
+dt { font-weight: bold;}
+
+ol li { margin-bottom: .4em;}
+
+blockquote, q { quotes: none;}
+
+a { cursor: pointer; text-decoration: underline; vertical-align:baseline;}
+ins { text-decoration: none;}
+mark { background-color: #ff9; color: #000; font-style:italic; font-weight: bold;}
+del { text-decoration: line-through;}
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor:help;}
+
+table { border-collapse: collapse; border-spacing: 0;}
+
+embed, object, img { vertical-align: bottom;}
+embed, object { outline: none;}
+img { border: none; color: #fff; background: transparent;}
+hr { display: none;}
+input, select { vertical-align: middle; margin-bottom: 5px;}
+
+/* common */
+
+body {
+	cursor: auto;
+	background: #fbfaf3 url(../img/common/bg.png) repeat-y 50% 0;
+	color: #473d24;
+	font: normal normal 14px/1.4 "Lucida Grande", "Hiragino Kaku Gothic Pro W3", "ヒラギノ角ゴ Pro W3", Meiryo, "メイリオ", Arial, Helvetica, "MS PGothic", "ＭＳ Ｐゴシック", sans-serif;
+	text-align: center;
+}
+
+h2 { margin: 29px auto 25px;}
+h2 img { margin-right: 16px;}
+
+blockquote { margin: 15px 0; padding: 10px 15px 3px; border: 1px solid #f3ead3; background: #faf6ed;}
+cite       { display: block; margin: 10px 0; padding: 10px; border: 1px solid #dacaaa; background: #fdfaf0; color: #654;}
+pre        {
+	overflow: auto;
+	white-space: pre-wrap;
+	word-wrap: break-word;
+	width: auto;
+	margin: 1em 0;
+	padding: 1em 20px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	background: #eee;
+}
+code       {
+	letter-spacing: 0;
+	color: #264409;
+	font-family: mono, sans-serif;
+}
+
+a         { color: #0063dc;}
+a:visited { color: #3b41a4;}
+a:hover   { color: #f80;}
+a:focus,
+a:active  { color: #f90;}
+/*
+a[href$=".pdf"]:after {
+	content: "(PDF)";
+	position: absolute;
+	top: 2px;
+	right: -3em;
+	font-size: 11px;
+	color: #999;
+	text-decoration: none;
+}
+*/
+em     { font-weight: bold; color: #666;}
+strong { font-weight: bold;}
+
+table { width: 100%; margin: 1em auto 1.5em;}
+th,
+td { vertical-align: middle; text-align: left; padding: 10px 12px; border-collapse: collapse; border-bottom: 1px solid #ddd;}
+th { font-size: 16px;}
+thead th {}
+thead td {}
+
+
+p { margin: 14px 9px;}
+
+/* utility */
+
+.aL, .al { text-align: left;}
+.aC, .ac { text-align: center;}
+.aR, .ar { text-align: right;}
+.fR, .fr { float: right;}
+.fL, .fl { float: left;}
+.clr, .clear { float: none; clear: both;}
+
+p.fl,
+p.fr { float: left; clear: none; margin: 0 9px 14px; text-align: center; line-height: 1.2;}
+p.fr { float: right;}
+.fl img,
+.fr img { margin-bottom: 4px; margin-right: 10px; padding: 3px; border: 1px solid #d5d3ca;}
+.fr img { margin-right: 0; margin-left: 10px;}
+.fl a:hover img,
+.fr a:hover img { border-color: #888;}
+
+.yellow, .red, .green, .blue,
+.error, .alert, .notice, .success, .info { padding: 0.8em; margin-bottom: 1em; border: 1px solid #ddd; border-radius: 2px; font-size: 12px;}
+.red,
+.error,
+.alert   { background: #fbe3e4; color: #8a1f11; border-color: #fbc2c4;}
+.yellow,
+.notice  { background: #fff6bf; color: #514721; border-color: #ffd324; text-align: center;}
+.green,
+.success { background: #e6efc2; color: #264409; border-color: #c6d880;}
+.blue,
+.info    { background: #d5edf8; color: #205791; border-color: #92cae4;}
+.red     a,
+.error   a,
+.alert   a { color: #8a1f11;}
+.yellow  a,
+.notice  a { color: #514721;}
+.green   a,
+.success a { color: #264409;}
+.blue    a,
+.info    a { color: #205791;}
+.yellow a:hover, .red a:hover, .green a:hover, .blue a:hover,
+.error a:hover, .alert a:hover, .notice a:hover, .success a:hover, .info a:hover { color: #666;}
+
+.notice ul { list-style-type: disc; margin: .5em 0 .5em 2em; text-align: left;}
+.notice li { margin-bottom: .5em;}
+
+.attention  { margin: 10px 0; padding: 10px; border: 1px solid #faa; background: #faf0f0; letter-spacing: 0;}
+.caution    { list-style: none; margin: 10px 0; padding: 10px; border: 1px solid #dacaaa; background: #fdfaf0; letter-spacing: 0;}
+ul.caution  { padding-bottom: 5px;}
+.caution li { margin-bottom: 5px;}
+.caution a  { padding-right: .4em; padding-left: .4em;}
+.note       { color: #555; font-size: 12px;}
+table + .note { margin-top: -20px;}
+.emphasis   { color: #121628; font-weight: bold;}
+.color-red  { color: #e8210b;}
+
+.jp { font-family: "ヒラギノ角ゴ Pro W3", Osaka, "ＭＳ Ｐゴシック", sans-serif;}
+.verdana { font-family: Verdana, sans-serif;}
+.times { font-family: "Times New Roman", Times, serif;}
+
+/* forms, formutil.js */
+
+fieldset { border: 1px solid #ddd; margin-bottom: 15px; padding: 10px;}
+* html legend { margin: 0 0 10px;}
+select option { padding: 0 5px;}
+label { cursor: pointer;}
+input[type=text],
+input[type=password],
+input.typeText,
+textarea { padding: 5px; border: 1px solid #bbb; background: #fcfcfc; border-radius: 2px;}
+input[type=text]:focus,
+input[type=password]:focus,
+input.typeText:focus,
+select:focus,
+textarea:focus { background: #f2f2f2;}
+#inputTypeHidden { padding: 0; height: 0;}
+#transmissionFailure {}
+input.typeCheckbox,
+input.typeRadio { border: none; vertical-align: text-top;}
+input.level1 { width:  70px;}
+input.level2 { width: 140px;}
+input.level3 { width: 280px;}
+input.level4 { width: 400px;}
+.size-1 { width: 64px;}
+.ime {ime-mode: disabled;}
+label.validateError { margin: 0; padding: 0 6px; border: none; background: transparent; color: #d50; font-weight: bold;}
+
+/*
+input[type="radio"],
+input[type="checkbox"] {
+	position: absolute;
+	top: auto;
+	left: -9999px;
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+	margin-right: 12px;
+	height: 27px;
+	padding: 4px 0 4px 26px;
+}
+
+input[type="radio"] + label {
+	background: url(../img/form/radio.png) no-repeat;
+}
+
+input[type="checkbox"] + label {
+	padding-left: 24px;
+	background: url(../img/form/checkbox.png) no-repeat 3px 4px;
+}
+
+input[type="radio"].checked + label    { background-image: url(../img/form/radio_checked.png);}
+input[type="checkbox"].checked + label { background-image: url(../img/form/checkbox_checked.png);}
+
+*/
+/* for IE7 */
+*:first-child + html input[type="radio"]    { position: static; top: auto; left: auto;}
+*:first-child + html input[type="checkbox"] { position: static; top: auto; left: auto;}
+*:first-child + html input[type="radio"] + label    { height: auto; padding: 0; background: transparent;}
+*:first-child + html input[type="checkbox"] + label { height: auto; padding: 0; background: transparent;}
+
+/* clearfix */
+
+section:after,
+.section div:after,
+.section:after,
+.column2:after,
+.column3:after,
+.banner-types:after,
+#footer div:after,
+#container:after, .clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+section,
+.section div,
+.section,
+.column2,
+.column3,
+.banner-types,
+#footer div,
+#container, .clearfix { display: inline-block;} /* for IE7 */
+
+/* Holly Hack Targets IE Win only \*/
+* html section,
+* html .section div,
+* html .section,
+* html .column2,
+* html .column3,
+* html .banner-types,
+* html #footer div,
+* html #container, * html .clearfix { height: 1%;}
+section,
+.section div,
+.section,
+.column2,
+.column3,
+.banner-types,
+#footer div,
+#container, .clearfix { display: block;}
+/* End Holly Hack */
+
+.tempNotes { font-size: 120%; color: #c00; font-weight: bold; background: #f8f8f8; margin: 1em; padding: 1em;}

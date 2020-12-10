@@ -1,0 +1,528 @@
+@charset "utf-8";
+
+/******************************************************************** 
+*/
+
+#googlemap { width: 100%; height: 400px;}
+#googlemapsContainer { width: 100%; height: 100%;}
+
+
+/* ==========================================================================
+   documents
+   ========================================================================== */
+
+.documents .notice { text-align: left;}
+
+/* ==========================================================================
+   contact
+   ========================================================================== */
+
+#input-type-hidden { padding: 0; height: 0;}
+#transmission-failure {}
+
+/* added classes in formutil.js */
+input.typeText  { border: 1px solid #aaa;}
+input.typeRadio { border: none;}
+
+/* set width of inputs */
+.level1 { width:  70px;}
+.level2 { width: 140px;}
+.level3 { width: 280px;}
+.level4 { width: 400px;}
+
+#c-opinions { width: 385px;}
+
+.c-button {
+	cursor: pointer;
+	width: auto;
+	margin: 0 20px 0 0;
+	padding: 5px 35px;
+	border: 1px solid #111;
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	box-shadow: inset 1px 1px 0 #555, inset -1px -1px 0 #222;
+}
+
+/* ==========================================================================
+   howto
+   ========================================================================== */
+
+.howto .section .clr .list-items {
+	margin-left: 330px;
+}
+
+/* ==========================================================================
+   snavi
+   ========================================================================== */
+
+.snavi h2 { margin: 9px auto;}
+
+#date { display: none;}
+#attention { display: none;}
+
+.step-chart {
+	position: relative;
+	width: 980px;
+	height: 96px;
+	margin: 6px -20px 9px;
+	background: url(../snavi/img/step_bg.png) no-repeat;
+}
+.step-chart li {
+	position: absolute;
+	top: 29px;
+	width: 69px;
+	height: 37px;
+	text-indent: -9999px;
+}
+.step1-1 .s1,
+.step1-2 .s1,
+.step2   .s2,
+.step3   .s3,
+.step4   .s4 { text-indent: 0;}
+
+.s1 { left: 240px;}
+.s2 { left: 428px;}
+.s3 { left: 620px;}
+.s4 { left: 810px;}
+
+.step-chart a {
+	display: block;
+	height: 100%;
+}
+
+.s1 a:hover { background: url(../snavi/img/step1.png) no-repeat;}
+.s2 a:hover { background: url(../snavi/img/step2.png) no-repeat;}
+.s3 a:hover { background: url(../snavi/img/step3.png) no-repeat;}
+.s4 a:hover { background: url(../snavi/img/step4.png) no-repeat;}
+
+.icon-note {
+	position: relative;
+	margin-top: -52px;
+	text-align: right;
+}
+
+.marks {
+	width: 20px;
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
+	text-align: center;
+}
+
+.mark1,
+.mark2 {
+	display: block;
+	color: #ff574b;
+}
+
+.marks-disc {
+	position: absolute;
+	z-index: 2;
+	top: 199px;
+	left: 50%;
+	margin-left: -133px;
+	font-size: 12px;
+}
+
+.marks-disc .mark1,
+.marks-disc .mark2 { display: inline;}
+
+
+.size-adjust1 { display: inline-block; width: 5.5em;}
+.size-adjust2 { display: inline-block; width: 13.0em;}
+
+.validate-error {
+	display: block;
+	/*display: none;*/
+	margin-top: 7px;
+	font-size: 12px;
+	color: red;
+}
+
+.banners,
+.next {
+	clear: both;
+	position: relative;
+	margin: 20px auto 42px;
+	text-align: center;
+}
+
+.banners .right {
+	position: absolute;
+	top: 11px;
+	right: 0;
+	width: auto;
+}
+
+.banners ul a {
+	padding-left: 17px;
+	background: url(../img/common/arrow3.png) 0 50% no-repeat;
+}
+
+.banners ul a:hover {
+	background-image: url(../img/common/arrow4.png);
+}
+
+div.next {
+	padding-top: 10px;
+#	border-top: 1px dotted #8e8275;
+}
+
+.next .prev {
+	position: absolute;
+	top: 24px;
+	left: 0;
+}
+
+.next .print {
+	position: absolute;
+	top: 24px;
+	right: 0;
+	width: 201px;
+}
+
+.print .note {
+	display: block;
+	margin-top: .5em;
+}
+
+
+.step1-1 th { width: 8em;}
+
+.step1-1 .kenshin-kun {
+	top: 340px;
+	left: 50%;
+	margin-left: 118px;
+}
+
+.step1-1 .notes {
+	display: inline-block;
+	width: auto;
+}
+
+.step1-2 .kenshin-kun {
+	top: 247px;
+	left: 50%;
+	margin-left: 203px;
+}
+
+.step1-2 .sub-title {
+	font-weight: normal;
+	text-align: right;
+}
+
+.step1-2 td .notes {
+	width: 220px;
+}
+
+.step2 .paper p {
+	margin-top: 0;
+	margin-bottom: 6px;
+	line-height: 1.2;
+}
+
+.step2 .emphasis {
+	margin: 0 3px;
+	color: #ff574b;
+	font-size: 24px;
+}
+
+.step3 .separator .fL {
+	margin: 2px 0;
+}
+
+.step3 .separator .fL + ul {
+	float: right;
+	width: 636px;
+}
+
+.flow-chart {
+	min-height: 1044px;
+}
+
+.flow-chart p {
+	margin: 0;
+}
+
+.flow-chart .contents {
+	float: left;
+	width: 836px;
+	height: 1044px;
+	margin-left: 1px;
+	background: url(../snavi/img/flow_chart_bg.png) 0 0 no-repeat;
+}
+
+.flow-chart .block {
+	position: relative;
+	text-align: center;
+}
+.flow-chart #block1 { height: 126px;}
+.flow-chart #block2 { height: 298px;}
+.flow-chart #block3 { height: 320px;}
+.flow-chart #block4 { height: 300px;}
+
+.flow-chart .box-container {
+	position: absolute;
+	padding: 6px 6px 6px 0;
+	border: 1px solid #bfbfbf;
+	background: #e6e6e6 url(../snavi/img/box_container_bg.png) 0 0 repeat-x;
+}
+
+.flow-chart .box-container > p {
+	height: 25px;
+	font-weight: bold;
+}
+
+.flow-chart .box-container .box {
+	position: static;
+	float: left;
+	margin-left: 6px;
+}
+
+.flow-chart .box {
+	position: absolute;
+	display: table;
+	vertical-align: middle;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+.flow-chart .alert {
+	margin: 0;
+	padding: 0;
+	border-color: #cfb0ae;
+	border-radius: 6px;
+	background: #fdf3f2 url(../snavi/img/box_alert_bg.png) 0 0 repeat-x;
+	font-size: 14px;
+	font-weight: bold;
+}
+.flow-chart .alert .note { color: #8a1f11; font-weight: normal;}
+
+.flow-chart .box .output {
+	display: inline-block;
+	width: 80%;
+	min-height: 1.2em;
+	margin: 3px auto;
+	padding: 2px;
+	border: 1px solid #bbb;
+	border-radius: 2px;
+	background: #fcfcfc;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.flow-chart .notice,
+.flow-chart .caution {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+}
+.flow-chart .notice {
+	background: #ffff33;
+	border-color: #e1cf2f;
+}
+.flow-chart .notice .output {
+	background-color: #ffffd6;
+	border-color: #e1cf2f;
+}
+.flow-chart .caution {
+	background: #e8210b;
+	border-color: #a01607;
+	color: #fbdad7;
+}
+.flow-chart .caution .output {
+	background-color: #ec4d3b;
+	border-color: #a01607;
+	color: #fff;
+}
+
+.flow-chart .box p {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	vertical-align: middle;
+}
+
+*:first-child + html .flow-chart .box p { display: inline; zoom: 1; margin-top: 6px;}
+
+.flow-chart .unit {
+	font-size: 12px;
+}
+
+.flow-chart #block1 .box {
+	top: 9px;
+	width: 165px;
+	height: 100px;
+}
+
+.flow-chart .block #box1-1 { left: 40px;}
+.flow-chart .block #box1-2 { left: 237px;}
+.flow-chart .block #box1-3 { left: 434px;}
+.flow-chart .block #box1-4 { left: 631px; height: 31px;}
+.flow-chart .block #box1-5 { left: 631px; top: 78px; height: 31px;}
+
+.flow-chart #block2 .box-container {
+	top: 66px;
+	height: 147px;
+}
+
+.flow-chart #block2 .alert {
+	width: 121px;
+	height: 120px;
+}
+
+.flow-chart .block #box-container2-1 { left:  40px; width: 120px;}
+.flow-chart .block #box-container2-2 { left: 180px; width: 258px;}
+.flow-chart .block #box-container2-3 { left: 479px; width: 309px;}
+.flow-chart .block #box-container2-1 .box { width: 112px;}
+.flow-chart .block #box-container2-3 .fL,
+.flow-chart .block #box-container2-3 .box p { width: 151px; height: 121px;}
+
+.flow-chart #block3 .box-container {
+	top: 52px;
+	width: 139px;
+	height: 221px;
+}
+
+.flow-chart #block3 .box {
+	width: 131px;
+	height: 194px;
+}
+
+.flow-chart .block #box-container3-1 { left:  40px; width: 285px;}
+.flow-chart .block #box-container3-2 { left: 341px;}
+.flow-chart .block #box-container3-3 { left: 495px;}
+.flow-chart .block #box-container3-4 { left: 649px;}
+.flow-chart .block #box-container3-1 .box {
+	position: relative;
+	width: 137px;
+	height: 97px;
+	margin-bottom: -1px;
+	margin-left: 146px;
+}
+.flow-chart .block #box-container3-1 .variant {
+	position: absolute;
+	top: 31px;
+	left: -1px;
+	width: 147px;
+	height: 296px;
+	padding: 0 6px 6px 0;
+	border-bottom: 1px solid #bfbfbf;
+	border-left: 1px solid #bfbfbf;
+	background: #e6e6e6 url(../img/common/vertical_line.png) 100% 187px no-repeat;
+}
+.flow-chart .block #box-container3-1 .variant .box { width: 139px; height: 100%; margin-left: 6px;}
+
+.flow-chart #block4 .box-container {
+	top: 56px;
+	height: 210px;
+}
+
+.flow-chart .block #box-container4-1 { left: 211px; width: 159px;}
+.flow-chart .block #box-container4-2 { left: 392px; width: 396px;}
+.flow-chart .block #box-container4-1 .box { width: 151px; height: 60px; margin-bottom: -1px;}
+.flow-chart .block #box-container4-2 .box { width: 388px; height: 182px;}
+.flow-chart #box-container4-2 .output { width: 129px;}
+
+
+.banner-relations {
+	clear: both;
+	width: 940px;
+	margin: 0px 0px 36px 0;
+	height: 73px;
+	padding-top: 53px;
+	background: url(../snavi/img/step3_banner2_bg.png) 0 0 no-repeat;
+	text-align: center;
+}
+
+
+/* ==========================================================================
+   home
+   ========================================================================== */
+
+.main {
+	position: relative;
+	width: 100%;
+	height: 265px;
+	background: url(../img/home/main_bg.jpg) 50% 0 no-repeat;
+}
+.main h2 {
+	position: absolute;
+	top: 86px;
+	left: 50%;
+	margin: 0 0 0 -421px;
+}
+
+.leading {
+	position: relative;
+	margin-bottom: 44px;
+}
+.leading .kenshin-kun {
+	top: -216px;
+	left: 378px;
+}
+.leading p ~ p {
+	width: 482px;
+}
+.leading strong {
+	color: #41a732;
+}
+
+.home .paper-container {
+	border-top: 3px solid #41a732;
+}
+
+.step {
+	position: relative;
+	width: 764px;
+	height: 97px;
+	margin: 10px 0 0 63px;
+	padding: 6px;
+	border: 1px solid #999270;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, .5);
+}
+.step:first-child {
+	margin-top: 26px;
+}
+.step h3 {
+	position: absolute;
+	top: -14px;
+	left: -62px;
+}
+.step p {
+	margin-left: 144px;
+}
+.step p span {
+	font-size: 12px;
+	color: #41a732;
+}
+.step .kenshin-kun {
+	top: -6px;
+	left: 581px;
+	margin-left: 0;
+}
+
+.extra {
+	margin: -22px 0 48px 114px;
+}
+.extra h3 {
+	float: left;
+	margin-right: 21px;
+}
+.extra p {
+	padding-top: 20px;
+}
+
+.buttons {
+	clear: both;
+	overflow: hidden;
+	margin: 22px 0;
+	border-radius: 2px;
+	background: #d3dec3;
+	text-align: center;
+}
+.buttons p {
+	margin: 14px 0 3px;
+}
